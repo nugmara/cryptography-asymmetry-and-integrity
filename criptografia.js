@@ -37,19 +37,6 @@ if (fs.existsSync('firma.bin')) {
     fs.writeFileSync('firma.bin', loadedSignature);
 }
 
-// Paso 2.a: Firmar una cadena de texto usando RSA y guardar la firma en un archivo binario B
-// const nombreCompleto = "Dagmara Grabowska"; // Esta línea no es necesaria aquí
-
-// const privateKey = fs.readFileSync('private_key.pem'); // Esta línea ya no es necesaria aquí
-
-// const sign = crypto.createSign('RSA-SHA256'); // Esta línea ya no es necesaria aquí
-
-// sign.update(nombreCompleto); // Esta línea ya no es necesaria aquí
-
-// const signature = sign.sign(privateKey); // Esta línea ya no es necesaria aquí
-
-// fs.writeFileSync('firma.bin', signature); // Esta línea ya no es necesaria aquí
-
 // Continuar con el resto del código después de verificar la existencia de las claves
 // Paso 2.b: Generar una clave secreta de forma segura
 if (!fs.existsSync('secret_key.bin')) {
